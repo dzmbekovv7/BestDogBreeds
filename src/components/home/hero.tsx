@@ -1,8 +1,6 @@
 import { Container } from '@/components/shared/container'
-import { useState } from 'react'
 
 export function Hero() {
-  const [loaded, setLoaded] = useState(false)
 
   return (
     <section className="relative min-h-screen bg-gradient-to-r from-gray-900 to-gray-900 overflow-hidden">

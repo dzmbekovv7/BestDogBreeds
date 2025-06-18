@@ -1,7 +1,6 @@
 import ArticleCardMedium from '@/components/shared/article-card/article-card-medium'
 import { Container } from '@/components/shared/container'
 import { useGetArticles } from '@/hooks/useArticles'
-import { XIcon } from 'lucide-react'
 import { Link, useSearchParams } from 'react-router'
 
 export function BlogPage() {
