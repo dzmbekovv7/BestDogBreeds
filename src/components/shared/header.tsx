@@ -57,7 +57,7 @@ const linkHoverColor = isSpecialBg ? 'hover:text-yellow-700' : 'hover:text-yello
 <div className="hidden md:block absolute inset-0 max-w-[500px] mx-auto rounded-xl bg-black opacity-20 blur-3xl pointer-events-none -z-10"></div>
 
 {/* Лого с мягкой анимацией масштабирования */}
-<div className="px-5 py-3 bg-white rounded-full shadow-lg cursor-pointer 
+<div className="px-5 hidden md:block py-3 bg-white rounded-full shadow-lg cursor-pointer 
                 animate-[pulse_6s_ease-in-out_infinite] hover:animate-none transition-transform duration-700">
   <img 
     src="https://cdn-icons-png.freepik.com/256/5100/5100114.png?semt=ais_hybrid" 
