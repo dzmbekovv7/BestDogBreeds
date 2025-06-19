@@ -53,18 +53,19 @@ const linkHoverColor = isSpecialBg ? 'hover:text-yellow-700' : 'hover:text-yello
       <Container>
         <div className="relative z-10 py-6 lg:py-10 text-center">
         <div className="flex justify-center items-center gap-6 p-4 relative">
-  {/* Фон вокруг лого и текста — компактный с плавным градиентом */}
-  <div className="absolute inset-0 max-w-[500px] mx-auto rounded-xl bg-black opacity-20 blur-3xl pointer-events-none -z-10"></div>
+{/* Фон вокруг лого и текста — показывается только на экранах шире md */}
+<div className="hidden md:block absolute inset-0 max-w-[500px] mx-auto rounded-xl bg-black opacity-20 blur-3xl pointer-events-none -z-10"></div>
 
-  {/* Лого с мягкой анимацией масштабирования */}
-  <div className="px-5 py-3 bg-white rounded-full shadow-lg cursor-pointer 
-                  animate-[pulse_6s_ease-in-out_infinite] hover:animate-none transition-transform duration-700">
-    <img 
-      src="https://cdn-icons-png.freepik.com/256/5100/5100114.png?semt=ais_hybrid" 
-      alt="Logo"
-      className="w-14 h-14 transform hover:scale-110 transition-transform duration-500"
-    />
-  </div>
+{/* Лого с мягкой анимацией масштабирования */}
+<div className="px-5 py-3 bg-white rounded-full shadow-lg cursor-pointer 
+                animate-[pulse_6s_ease-in-out_infinite] hover:animate-none transition-transform duration-700">
+  <img 
+    src="https://cdn-icons-png.freepik.com/256/5100/5100114.png?semt=ais_hybrid" 
+    alt="Logo"
+    className="w-14 h-14 transform hover:scale-110 transition-transform duration-500"
+  />
+</div>
+
 
   {/* Текст с тенью и плавным появлением */}
   <div className="flex flex-col text-center select-text">
