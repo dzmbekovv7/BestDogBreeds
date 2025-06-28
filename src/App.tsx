@@ -6,7 +6,6 @@ import {
 	BlogPage,
 	ContactsPage,
 	HomePage,
-	NotFoundPage,
 	PrivacyPolicyPage,
 } from './pages'
 
@@ -21,7 +20,6 @@ export default function App() {
 					<Route path='privacy-policy' element={<PrivacyPolicyPage />} />
 					<Route path='blog' element={<BlogPage />} />
 					<Route path='articles/:slug' element={<ArticlePage />} />
-					<Route path='*' element={<NotFoundPage />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>
